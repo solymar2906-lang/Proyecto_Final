@@ -1,0 +1,15 @@
+Clase viernes 30 de octubre:
+
+En la clase de hoy trabajamos con NumPy, una herramienta de Phyton para manejar números. Primero practicamos en Google Colab con una tabla de números de 3x3 y aprendimos a "recortarla" para quedarnos solo con ciertas partes, indicando que filas y que columnas queremos. Después vimos cómo calcular datos estadísticos de un grupo de números, como el promedio, el valor más alto, el más bajo, y aprendimos que podemos decidir si el cálculo se hace sobre toda la tabla, por columnas o por filas. 
+
+Clase Miércoles 4 de noviembre:
+
+En la clase de hoy trabajamos con pandas, una herramienta de Python que organiza datos en tablas llamadas DataFrame. Aprendimos a explorar los datos, seleccionar y filtrar filas, limpiar datos faltantes y duplicados, y agrupar la información con groupby para calcular promedios por categoría.
+
+Clase Miércoles 11 de noviembre:
+
+En la clase de hoy trabajamos con Matplotlib, una librería de Python para hacer gráficas. Aprendimos a crear una gráfica con plt.plot() y a personalizarla con título, ejes, cuadrícula, colores y leyenda. También vimos otros tipos de gráficas, como dispersión, barras, histograma y torta, y cuándo usar cada una. Por último, aprendimos a hacer subgráficas y a guardar las figuras con plt.savefig().
+
+Clase Viernes 13 de noviembre:
+
+En la clase de hoy hicimos revisión de las bases de datos seleccionadas por cada uno, para asegurar que tienen las características necesarias.
