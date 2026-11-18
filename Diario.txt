@@ -1,0 +1,13 @@
+Clase 30 de octubre de 2026(viernes)
+
+se hablo de que era la base de datos Numpy.
+Qué es NumPy?: Es base de la ciencia de datos en Python. Usa arreglos (ndarray) que guardan datos del mismo tipo y permiten hacer operaciones rápid
+as sin usar ciclos for (vectorización).  
+
+Se crean arreglos con np.array, ceros o datos aleatorios. Su .shape nos dice filas (observaciones) y columnas (variables).
+  
+Se accede con [fila, columna]. Ojo: los cortes (:) crean vistas que modifican el original si no usamos .copy().  
+
+NumPy ajusta formas distintas automáticamente para operar. Usamos máscaras booleanas (ej. notas >= 3) para filtrar datos fácilmente.  
+
+Vimos .reshape() para cambiar formas, manejo de nan con funciones como np.nanmean() para no dañar los cálculos, y un reto práctico al final.
