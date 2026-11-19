@@ -1,6 +1,6 @@
 Clase 30 de octubre de 2026(viernes)
 
-se hablo de que era la base de datos Numpy.
+se hablo de Numpy una librería de Python.
 Qué es NumPy?: Es base de la ciencia de datos en Python. Usa arreglos (ndarray) que guardan datos del mismo tipo y permiten hacer operaciones rápid
 as sin usar ciclos for (vectorización).  
 
@@ -11,3 +11,78 @@ Se accede con [fila, columna]. Ojo: los cortes (:) crean vistas que modifican el
 NumPy ajusta formas distintas automáticamente para operar. Usamos máscaras booleanas (ej. notas >= 3) para filtrar datos fácilmente.  
 
 Vimos .reshape() para cambiar formas, manejo de nan con funciones como np.nanmean() para no dañar los cálculos, y un reto práctico al final.
+
+
+
+clase 4 de noviembre de 2026(miércoles)
+
+Se habló de la librería pandas .
+Qué es pandas?: Es la librería de Python que se encarga de organizar, cargar, limpiar y transformar la información en formato de tabla antes de analizarla. 
+ 
+Estructura:El DataFrame es la tabla completa con filas y columnas etiquetadas, y una Series es una sola columna de esa tabla.  
+
+Al cargar un archivo, siempre revisamos con df.shape, df.head(), df.info() y df.describe() para entender filas, tipos de datos y nulos.  
+
+Se usa df.loc[] por etiqueta y df.iloc[] por posición. Para filtrar filas con condiciones se usan máscaras booleanas con la misma lógica de NumPy.  
+
+Podemos detectar nulos con df.isna().sum(), eliminarlos con df.dropna(), rellenarlos, quitar duplicados y crear nuevas columnas mediante fórmulas sin usar ciclos.
+  
+groupby sirve para dividir, aplicar y combinar datos por categorías (por ejemplo, sacar el promedio por programa).
+
+
+
+Clase 11 de noviembre de 2026(miércoles)
+
+la clase se trato de la librería matplotlib.
+Qué es Matplotlib?: Es una de las librerias más usada en Python para graficar.Su módulo pyplot(plt) dibuja sobre la figura paso a paso (datos, graficar, personalizar y mostrar con plt.show()).  
+
+​Se agrega título con plt.title(), para nombres de ejes plt.xlabel() plt.ylabel(), para que al grafico le aprezca cuadricula plt.grid(True), límites plt.xlim() plt.ylim() y leyenda plt.legend() usando label en cada curva. 
+
+El estilo de línea, color y marcador puede ir en cadena corta (ej. "r--o") o en argumentos separados (color, linestyle, marker, linewidth). 
+
+código para colores
+"b" azul
+"g" verde
+"r" rojo
+"k" negro
+"m" magenta
+
+estilos de lineas
+"-" continua
+"--" discontinua
+":" punteada
+"-." raya-punto
+
+marcadores
+"o" círculo
+"s" cuadrado
+"^" triangulo
+"*" estrella
+"x" equis
+ 
+​Tipos de gráficas.
+plt.plot() para tendencias/curvas,
+
+Grafica de dispersión(la que son puntos que no se unen)
+plt.scatter()
+
+Grafica de barras(para comparar cantidades con categoria)
+plt.bar() / plt.barh()
+
+Histograma
+plt.hist(datos,bins=num de barras histograma,edgecolor="color a los bordes ",color="")
+
+Grafica de torta(para mostrar porciones o porcentajes)
+lt.pie(porcentajes, labels=categorias,autopct="%1.0f%%") 
+plt.pie dibuja el grafica circular y autopct escribe el porcentaje automáticamente
+
+subgraficas
+para hacer subgraficas se utiliza  plt.subplot(filas, columnas, posición) organiza varias gráficas (posición empieza en 1). 
+plt.annotate() señala un punto con flecha y plt.text() escribe en una coordenada.
+Para guardar se usa plt.savefig("archivo.png", dpi=300) (con figsize) antes de plt.show() para que no salga en blanco.  
+​
+
+
+Clase 13 de noviembre de 2026(viernes)
+En esta clase cada estudiante selecciono dos bases de datos, él profesor no las reviso y nos dio el visto bueno para poder utilizarlas y montarlas a nuestra rama .
+
