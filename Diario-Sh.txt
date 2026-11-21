@@ -1,0 +1,104 @@
+ NumPy ( clase 30 de octubre)
+
+NumPy es una librería que nos ayuda a trabajar con datos numéricos (guarda y calcula números de forma rápida) sobre todo con array que son vectores y matrices.
+ 
+para importar librería usamos :
+
+import numpy as np
+
+para crear arrays:
+
+ a: np.array ([lista])
+
+arreglo_ceros = np.zeros((4,2))
+
+arreglo_unos = np.ones((1,3))
+
+arreglo_paso = np.arange(0,11,2)
+
+arreglo_espaciado = np.linspace(0, 2, 8)
+
+np.random.normal(3.5 , 0.5 , 40)
+
+.shape dice cuantas columnas y variables hay
+
+arreglo_2d = np.array([[1,2,3],[4,5,6]])
+print(arreglo_2d)
+print("La forma es", arreglo_2d.shape)
+print("La dimensión es", arreglo_2d.ndim)
+print("La cantidad de elementos es", arreglo_2d.size)
+print("El tipo de dato es", arreglo_2d.dtype)
+
+
+
+arreglo_a = np.array([6, 7, 8])
+arreglo_b = np.array([10, 11, 12])
+
+print(arreglo_a + arreglo_b)
+print(arreglo_a - arreglo_b)
+print(arreglo_a / arreglo_b)
+print(arreglo_a**2)
+print(arreglo_a*2)
+
+Pandas ( clase 4 de noviembre)
+
+se dio una breve explicacion de lo que es la libreria de pandas . 
+pandas organiza los datos en tablas con nombres de columna.
+limpia y transforma la información antes de analizarla.
+orden: Obtener-datos. Calcular-NumPy. Organizar-pandas. Visualizar-matplotlib
+
+  import numpy as np
+  import pandas as pd 
+
+Dataframe : La tabla completa: filas y columnas con nombre.
+series: Una sola columna con su índice . indice:La etiqueta de cada fila: 0, 1, 2… o una fecha, un código
+
+serie=pd.Series([1,2,3])
+df=pd.DataFrame({"columna 1":[1,2,3,4], "columna 2":["a","b","c","d"]})
+
+tambien vimos las funciones basicas para poder entender como funcionaba 
+
+df.head() muestra las primeras 5 filas
+df.index  muestra el indice de las filas
+df.shape
+
+Vimos que tambien sirve para hacer funciones estadisticas basicas , como:
+count: num filas con dato válido
+mean: el promedio de los valores
+std: la desviación estándar, que indica qué tan dispersos están los datos respecto al promedio.
+min: el valor más pequeño (mínimo) de la columna.
+25%: el 25% de los datos está por debajo de este valor.
+50%: la mediana; 
+75%:  el 75% de los datos está por debajo de este valor.
+max: el valor más grande (máximo) de la columna.
+
+df.describe()
+
+hablamos tambien sobre otras funciones para limpiar datos , operaciones entre columnas , insertar nuevos valores , hayar los valores nulos , etc.
+
+
+matplotlib (clase 11 noviembre)
+
+es una libreria usada para graficar.
+sirve para visualizar gran cantidad de datos - buena para estudiar tendencias entre variables
+
+import matplotlib.pyplot as plt 
+
+se pueden hacer graficas de linea , histogramas , grafico de barras  , "tortas" , grafico de puntos , graficas de seno y coseno. 
+
+vimos como hacer estas graficas , las funciones que hay para hacerla , como por ejemplo 
+
+Estilos de línea
+"-" continua
+"--" discontinua
+":" punteada
+"-." raya-punto
+
+Marcadores
+"o" círculo
+"s" cuadrado
+"^" triángulo
+"*" estrella
+
+
+
